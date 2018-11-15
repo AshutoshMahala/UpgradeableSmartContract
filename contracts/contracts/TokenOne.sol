@@ -1,9 +1,10 @@
 pragma solidity ^0.4.24;
 
 import "./SafeMath.sol";
-import "./Upgradeable.sol";
+import "./IRC20.sol";
+import "./UpgradeabilityStorage.sol";
 
-contract TokenOne is Upgradeable{
+contract TokenOne is IERC20, UpgradeabilityStorage{
 
     using SafeMath for uint256;
     mapping (address => uint256) public balances;

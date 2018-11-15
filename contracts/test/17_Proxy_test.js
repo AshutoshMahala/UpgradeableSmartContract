@@ -4,7 +4,6 @@ var Registry = artifacts.require("./Registry.sol");
 // var Proxy = artifacts.require("./Proxy.sol");
 // var UpgradeabilityStorage = artifacts.require("./UpgradeabilityStorage.sol");
 var UpgradeabilityProxy = artifacts.require("./UpgradeabilityProxy.sol");
-// var Upgradeable = artifacts.require("./Upgradeable.sol");
 var TokenOne = artifacts.require("./TokenOne.sol");
 var TokenTwo = artifacts.require("./TokenTwo.sol");
 var abi = require('ethereumjs-abi');

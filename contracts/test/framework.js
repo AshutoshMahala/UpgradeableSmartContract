@@ -1,16 +1,10 @@
 // Implementation
 
 var BigNumber = require('bignumber.js');
-var IRegistry = artifacts.require("./IRegistry.sol");
-var Registry = artifacts.require("./Registry.sol");
-var Proxy = artifacts.require("./UpgradeabilityProxy.sol");
-var UpgradeabilityStorage = artifacts.require("./UpgradeabilityStorage.sol");
-var UpgradeabilityProxy = artifacts.require("./UpgradeabilityProxy.sol");
-var Upgradeable = artifacts.require("./Upgradeable.sol");
 var TokenOne = artifacts.require("./TokenOne.sol");
-var abi = require('ethereumjs-abi');
 
-// Run a test with the given accounts, done callback, and auction schema.
+
+// Run a test with the given accounts, done callback, and schema.
 module.exports = function (accounts, done, schema) {
     var gasPrice = new BigNumber(15000000000);
     if (schema.gasPrice) {
